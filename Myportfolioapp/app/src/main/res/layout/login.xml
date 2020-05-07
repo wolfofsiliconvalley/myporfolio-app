@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/headertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Email or Phone Number:"
+        android:textColor="@color/blueSecond"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:LineSpacingExtra="4dp"
+        android:text="Password:"
+        android:textAlignment="center"
+        android:textColor="@color/blueSecond"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headertitle" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:lineSpacingExtra="4dp"
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not yet signed up?"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Join Now"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:
+        android:clickable="true"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
+        android:src="@drawable/start"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

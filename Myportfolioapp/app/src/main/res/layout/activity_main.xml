@@ -3,183 +3,113 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/blueSoft"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/headertitle"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/background_one_image"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Franklin Osakwe"
-        android:textColor="@color/blueSecond"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"/>
+        app:srcCompat="@drawable/here" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/picture"
+        app:civ_border_color="@color/pic_background_Color"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtitle"
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/osakwefranklin"
         android:textAlignment="center"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="Hello there, I'm Osakwe, Franklin Osakwe. A graduate of Start.NG in Flutter and Kotlin. I'm currently studying Statistics at University of Benin. I write codes, codes that kill, you could say i've got the license to kill"
-        android:textColor="@color/silver"
-        android:textSize="16sp"
-        android:LineSpacingExtra="4dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headertitle"
-        android:layout_marginTop="14dp"/>
-
-    <ImageView
-        android:id="@+id/IMG_20200212_094956"
-        android:src="@drawable/IMG_20200212_094956"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
-
-
-
-    <linearLayout
-        android:id="@+id/parent_result"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tech_used_text"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/IMG_20200212_094956"/>
-
-        <ImageView
-            android:id="@+id/23931"
-            android:src="@drawable/23931"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="color/transparent"
-            app:layout_constraintTop_toBottomOf="@+id/subtitle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-
-
-
-
-    <ImageView
-        android:id="@+id/23931"
-        android:src="@drawable/23931"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/mobile_developer"
+        android:textAlignment="center"
+        android:textColor="@color/text_Color_two"
+        android:textIsSelectable="true"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
 
-
-    <ImageView
-        android:id="@+id/download"
-        android:src="@drawable/download"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/bio_text"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/bio"
+        android:textAlignment="center"
+        android:textColor="@color/text_Color_two"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tech_used_text" />
 
-    <ImageView
-    android:id="@+id/images (1)"
-    android:src="@drawable/images (1)"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    android:layout_marginLeft="50dp"
-    android:background="color/transparent"
-    app:layout_constraintTop_toBottomOf="@+id/subtitle"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"/>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/pic_background_Color"
+        app:layout_constraintBottom_toTopOf="@+id/app_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_text" />
 
-
-    <ImageView
-        android:id="@+id/images (2)"
-        android:src="@drawable/images (2)"
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/app_layout"
+        layout="@layout/grid_layout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/images (3)"
-        android:src="@drawable/images (3)"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/display_text"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:orientation="vertical"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        android:layout_marginTop="8dp"
+        android:autoText="false"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_light"
+        android:maxLines="1"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/text_Color"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-
-    <ImageView
-        android:id="@+id/images (4)"
-        android:src="@drawable/images (4)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:orientation="vertical"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <ImageView
-        android:id="@+id/images (5)"
-        android:src="@drawable/images (5)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:orientation="vertical"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-
-    <ImageView
-        android:id="@+id/images (6)"
-        android:src="@drawable/images (6)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:orientation="vertical"
-        android:background="color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-
-
-
-
-
-
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio_text" />
 
 
 
